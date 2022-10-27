@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"  integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="32x32" href="./calculator.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container-md col-10 col-sm-8 col-md-6 col-lg-4 big-container">
+        <div>
+            <input id="inputSup" class="container-md input-sup-container" type="text" name="message" value="">
+        </div>
+        <div>
+            <input id="inputInf" class="container-md input-inf-container" onclick="inputClick()" type="text" name="message" value="0">
+        </div>
+        <div class="button">
+            <div class="row">
+                <div class="col d-grid col-3"> <button type="button" class="btn btn-secondary  " onclick="getAddInput('(')">(</button> </div>
+                <div class="col d-grid col-3"> <button type="button" class="btn btn-secondary " onclick="getClean()">C</button> </div>
+                <div class="col d-grid col-6"> <button type="button" class="btn btn-danger del"  onclick="getDelete()">⟵</button> </div>
+            </div>
+            <div class="row">
+                <div class="col d-grid"> <button type="button" class="btn btn-secondary " onclick="getAddInput(')')">)</button> </div>
+                <div class="col d-grid"> <button type="button" class="btn btn-secondary " onclick="kvIldiz()">√</button> </div>
+                <div class="col d-grid"> <button type="button" class="btn btn-secondary " onclick="daraja()">X^2</button> </div>
+                <div class="col d-grid"> <button type="button" class="btn btn-secondary " onclick="getAddInput('+')">+</button>  </div>               
+            </div>
+            <div class="row">
+                <div class="col d-grid"> <button type="button" class="btn btn-secondary " onclick="getAddInput(7)" >7</button> </div>
+                <div class="col d-grid"> <button type="button" class="btn btn-secondary " onclick="getAddInput(8)" >8</button> </div>
+                <div class="col d-grid"> <button type="button" class="btn btn-secondary " onclick="getAddInput(9)" >9</button> </div>
+                <div class="col d-grid"> <button type="button" class="btn btn-secondary " onclick="getAddInput('-')">-</button> </div>
+            </div>
+            <div class="row">
+                <div class="col d-grid"> <button type="button" class="btn btn-secondary " onclick="getAddInput(4)" >4</button> </div>
+                <div class="col d-grid"> <button type="button" class="btn btn-secondary " onclick="getAddInput(5)" >5</button> </div>                
+                <div class="col d-grid"> <button type="button" class="btn btn-secondary " onclick="getAddInput(6)" >6</button> </div>
+                <div class="col d-grid"> <button type="button" class="btn btn-secondary " onclick="getAddInput('*')">*</button> </div>      
+            </div>
+            <div class="row">
+                <div class="col d-grid"> <button type="button" class="btn btn-secondary " onclick="getAddInput(1)" >1</button> </div>
+                <div class="col d-grid"> <button type="button" class="btn btn-secondary " onclick="getAddInput(2)" >2</button> </div>
+                <div class="col d-grid"> <button type="button" class="btn btn-secondary " onclick="getAddInput(3)" >3</button> </div>
+                <div class="col d-grid"> <button type="button" class="btn btn-secondary " onclick="getAddInput('/')">/</button>   </div>     
+            </div>
+            <div class="row">
+                <div class="col d-grid col-3"> <button type="button" class="btn btn-secondary " onclick="getAddInput(0)" >0</button> </div>
+                <div class="col d-grid col-3"> <button type="button" class="btn btn-secondary " onclick="getAddInput('.')">.</button> </div>
+                <div class="col d-grid col-6 "> <button type="button" class="btn btn-danger " onclick="getEval()">=</button></div>
+                       
+            </div> 
+        </div> 
+    </div>      
+    
+    <script src="script.js">
+
+
+        
+    </script>
+</body>
+</html>
